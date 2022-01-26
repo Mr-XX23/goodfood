@@ -1,0 +1,508 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,400;1,500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+     
+  }
+  /* ******************************************************** component 1 navbar ************************************************************** */
+  .main{
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+  .navbar-light .navbar-toggler-icon {
+    background-image: url(./components/img/burger1.png);
+}
+.navbar-toggler-icon {
+  width: 2em;
+  height: 2em;
+}
+.navbar-light .navbar-toggler {
+  color: none !important;
+  border-color: #f8f9fa !important;
+}
+  .Good {
+    color: #e99e0b;
+    font-weight: bold;
+    font-size: 26px;
+  }
+  .nav-link{
+    font-weight: bold;
+    padding: 7px;
+    align-items: center;
+    text-align: center;
+    color:#071b32 !important;
+  }
+  
+
+
+  .nav-link.active{
+    color: chocolate !important;
+  }
+
+  #d-button{
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background: #071b32;
+    font-weight: 500;
+  }
+
+  #d-button:hover, #d-button:focus, #d-button:active{
+    background: none;
+    outline: none;
+    color: #071b32;
+    border: 2px solid #071b32;
+    background: #fff !important;
+  }
+   
+  #d-button2{
+    border-radius: 20px;
+    border-color: #071b32;
+    color: #071b32;
+    font-weight: bold;
+  }
+   
+  .btn-outline-success:hover, .btn-outline-success:focus, .btn-outline-success:active{
+    background-color: #071b32 !important;
+    color: #fff !important;
+    box-shadow: none !important;
+    outline: none;
+    border: none;
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: 0 0 0 0;
+}
+
+  @media (min-width: 0px) and (max-width: 575.98px) { 
+   .hide{
+     display: none !important;
+   }
+   .cen {
+    margin-left: 0px !important;
+  }
+  .form_label {
+    font-size: 12px !important;
+    bottom: 1.4rem !important;
+  }
+  .widthimg2{
+    width:100%;
+  }
+  .height {
+    height: 500px !important;
+  }
+  .card-title{
+    font-size: 40px;
+  }
+  .card-text{
+    font-size: 17px;
+  }
+  img.card-img-top.top1, .top2, .top3 {
+    padding: 2.5rem;
+  }
+  img.card-img-top.top2{
+    padding: 2.5rem;
+  }
+  img.card-img-top.top3{
+    padding: 2.5rem;
+  }
+  .tts2{
+    font-size: 20px;
+  }
+  .hero{
+    margin-top: 41px;
+  }
+}
+
+  @media (max-width: 991.98px) { 
+    #d-button2 {
+      position: absolute;
+      right: 8px;
+    }
+    .navbar-collapse {
+      background-color: #CEE5E6 !important;
+    }
+    #d-button{
+      padding-left: 17px;
+      padding-right: 17px;
+    }
+  }
+   /* **************************************************************** navbar end ***************************************************** */
+  
+  
+   /* ********************************************* search bar ****************************************************************************/
+
+
+  .view{
+    background-image: url(./components/img/backgrounf_1.png);
+    font-family: "Poppins", sans-serif;
+    font-weight: 300; 
+  }
+
+  .height {
+    height: 625px;
+}
+
+.search {
+    position: relative;
+    box-shadow: 0 0 40px rgba(51, 51, 51, .1)
+}
+
+.search input {
+  border-top: 2px solid #9b4848;
+  height: 60px;
+  text-indent: 25px;
+  border-bottom: 2px solid #9b4848;
+  border-radius: 42px;
+  background: #eee;
+  color: #000;
+}
+
+.search input:focus {
+    box-shadow: none;
+    color:#000;
+    background: #eee;
+    outline: none;
+
+}
+
+.search .fa-search {
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  color: #000;
+  font-size: 20px;
+}
+
+.search button {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  height: 43px;
+  width: 82px;
+  border: 1px solid #eee;
+  border-radius: 40px;
+  color: #fff;
+}
+
+  .form_label {
+  position: absolute;
+  color: #000;
+  left: 2.5rem;
+  bottom: 1.1rem;
+  font-size: 18px;
+  cursor: text;
+  -webkit-user-select: none;        
+-moz-user-select: none;
+-ms-user-select: none; 
+user-select: none; 
+}
+
+.search input:focus ~ .form_label{
+  top: 0.2rem;
+  font-size: 0.7rem;
+  left:2.8rem;
+}
+
+.button_2{
+  border: 2px solid #071b32 !important;
+  background: #071b32 !important;
+}
+
+.button_2:active, .button_2:hover, .button_2:focus{
+ background: none !important;
+ color: #071b32 !important;
+}
+/* ********************************************* search bar ends ****************************************************************************/
+/* *****************************************************************Offers********************************************************** */
+
+.card{
+  border:none;
+  transition: 0.4s ease;
+}
+ .card:hover{
+    box-shadow: 9px 11px 18px -7px;
+    transform: translate( 
+      -11px,
+      -17px
+ );
+}
+ .card-img-top{
+   padding: 4.5rem;
+ }
+ .top2{
+   margin-top: -26px;
+ }
+ .top3{
+  margin-top: -11px;
+ }
+ .card-title {
+  margin-top: -3rem;
+  color: #071b32;
+}
+.card-text {
+  color: #071b32;
+  font-weight: 500;
+}
+.button_3 {
+  border-radius: 20px;
+}
+
+/* **************************************************************************ooffer ends************************************************* */
+/* ****************************hero pattern****************************************************************************************************** */
+.title_text_sub2, .title_text2{
+  color: #071b32;
+  padding: 1px;
+}
+.tts2{
+ font-size: 2rem;
+ }
+/* ****************************hero pattern****************************************************************************************************** */
+/* ************************************************** carasoul**************************************************************************************** */
+  /* **********************************************************carasoul end********************************************************** */
+  /* ************************************Our Patners****************************************************************************** */
+  .small3 {
+    color: #071b32;
+  }
+  
+  .small1{
+    color: #071b32;
+    font-weight: bold;
+  }
+  /* ************************************Our Patners****************************************************************************** */
+  
+  
+  
+  
+  /* /* *********************************************************testimonal********************************************************* */
+  .section5{
+    background-color: cornsilk;
+    height: 60vh;
+  }
+  .testimonal{
+    height: 100vh;
+    width: 100vw;
+    background-color: cornsilk;
+  }
+  .t-img{
+    width:10vh
+  }
+  .t-text{
+    letter-spacing:1px
+  }
+   
+  /* *********************************************************testimonal ends********************************************************* */
+  /* ******************************************************* Download app ****************************************************** */
+ .widthimg{
+   width:100%;
+ }
+ .head_text{
+   font-weight: bold;
+   color: #000;
+   font-size: 30px;
+ }
+ .para_text{
+  font-size: 20px;
+  font-weight: 400;
+ }
+
+
+/* ******************************************************* Download app ends ****************************************************** */
+  /* *************************************************footer************************************************************************************ */
+.text-small {
+  font-size: 0.9rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+.form-control {
+  background: #212529;
+  border-color: #545454;
+}
+
+.form-control:focus {
+  background: #212529;
+}
+
+footer {
+  background: #212529;
+}
+.logo_design{
+  color: aqua;
+  font-size: 20px;
+}
+/* *****************************************************************footer ends************************************ */
+
+/* ************************************************About us************************************************** */
+.m-0{
+  font-size: 40px;
+ }
+
+ .svg-img{
+   display: none;
+ }
+
+ .imgpadding{
+   padding-bottom: 2.5rem;
+ }
+ .ratio {
+  max-height: 40vh;
+ }
+
+/* ************************************************About us************************************************** */
+/* ************************************************Partnershipwithus************************************************** */
+.downfall {
+  margin-top: 6rem;
+}
+.headingimg{
+  background: url(./components/img/Partnershipwithus.jpg);
+}
+.section10{
+  background-color: #0d0d0d7d;
+}
+.clickhere:active, .clickhere:focus, .clickhere:hover {
+  background: #071b32 !important;
+  color: #fff !important;
+  border: none;
+  outline: none;
+}
+/* ************************************************Partnershipwithus************************************************** */
+/* ******************************************contactus************************************************************************ */
+.wrapper {
+    max-width: 850px;
+    margin: 50px auto;
+    height: 600px;
+    background-color: #FFF;
+    overflow: hidden;
+    box-shadow: 5px 25px 35px #3535356b
+}
+
+.wrapper .bg-yellow {
+    background-color: #fdc91f;
+    height: 100%;
+    width: 40%;
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-right: 20px
+}
+
+.wrapper .bg-yellow .text-white {
+    font-size: 3rem
+}
+
+.wrapper .bg-yellow .cursive {
+    font-family: 'Kalam', cursive;
+    font-size: 1rem;
+    font-weight: 600
+}
+
+.wrapper .contact-form {
+    width: 100%;
+    padding: 40px 80px 40px 50px
+}
+
+.wrapper .contact-form .h3 {
+    padding-top: 15px;
+    font-weight: 700
+}
+
+.wrapper .contact-form label {
+    font-size: 0.9rem;
+    color: #555;
+    font-weight: 500;
+    margin-bottom: 10px
+}
+
+.wrapper .contact-form textarea {
+    height: 120px
+}
+
+.wrapper .contact-form .form-control {
+    background-color: #e7e7e7;
+    box-shadow: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border: none;
+    border-top: 1px solid #bbb
+}
+
+.wrapper .contact-form .btn {
+    font-size: 1.2rem;
+    font-weight: 700
+}
+
+.wrapper .contact-form .btn.btn-default {
+    color: #F50057
+}
+
+.wrapper .contact-form .btn.btn-primary {
+    background: #F50057;
+    border: none;
+    padding: 8px 18px;
+    box-shadow: 0 8px 12px #3535356b
+}
+
+.wrapper .contact-form .btn.btn-primary:hover {
+    background-color: #f50056e5
+}
+
+.modal .modal-content .modal-header .fas {
+    color: #F50057
+}
+
+@media(max-width: 900.5px) {
+    .wrapper {
+        margin: 20px
+    }
+}
+
+@media(max-width: 575.5px) {
+    .wrapper .contact-form {
+        padding: 40px
+    }
+
+    .wrapper .bg-yellow {
+        padding-left: 30px
+    }
+}
+
+@media(max-width: 496px) {
+    .wrapper .bg-yellow {
+        display: none
+    }
+}
+
+@media(max-width: 350px) {
+    .wrapper {
+        height: 570px
+    }
+
+    .wrapper .contact-form {
+        padding: 20px
+    }
+}
+/* ******************************************contactus************************************************************************ */
+/* ***********************************************Getorder******************************************************************* */
+
+.bgimg1{
+  background-image: url(
+    ./components/img/unsplash-photo-1.jpg
+  );
+  background-repeat: no-repeat;
+  width: 293px;
+}
+
+/* ******************************************Getorder************************************************************************ */
